@@ -1,0 +1,9 @@
+// DB 
+var low = require('lowdb');
+low.mixin(require('underscore-db'));
+var db = low('cinematics.json');
+
+
+
+
+module.exports.Db = db;
