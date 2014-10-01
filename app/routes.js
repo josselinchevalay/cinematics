@@ -11,7 +11,7 @@ module.exports = function(app, Db) {
 	// sample api route
 	// get all cinematic
 	app.get("/api/cinematics", function(req, resp){
-		resp.json(Db.where({"favorite":false}).value());
+		resp.json(Db.where().value());
 	});
 	/*app.get('/api/nerds', function(req, res) {
 		// use mongoose to get all nerds in the database
