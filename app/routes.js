@@ -1,13 +1,18 @@
  // app/routes.js
 
 // grab the nerd model
-module.exports = function(app) {
+module.exports = function(app, Db) {
 
+	
 	// server routes ===========================================================
 	// handle things like api calls
 	// authentication routes
 
 	// sample api route
+	// get all cinematic
+	app.get("/api/cinematics", function(req, resp){
+		resp.json(Db.where({"favorite":false}).value());
+	});
 	/*app.get('/api/nerds', function(req, res) {
 		// use mongoose to get all nerds in the database
 		Nerd.find(function(err, nerds) {

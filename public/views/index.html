@@ -13,7 +13,7 @@ href="../libs/core-header-panel/core-header-panel.html">
 href="../libs/core-toolbar/core-toolbar.html">
 <link rel="import"
 href="../libs/paper-tabs/paper-tabs.html">
-<link rel="import" href="./js/PostCard/PostCard.html">
+<link rel="import" href="./js/PostList/PostList.html">
 <style>
 html,body {
 height: 100%;
@@ -62,10 +62,10 @@ width: 400px;
 </paper-tabs>
 </core-toolbar>
 <div class="container" layout vertical center>
-<post-card>
-<h2>Another Developer</h2>
-<p>I'm composing with shadow DOM!</p>
-</post-card>
+ <div class="container" layout vertical center>
+      <post-list show="all"></post-list>
+    </div>
+  </core-header-panel>
 </div>
 </core-header-panel>
 <script>

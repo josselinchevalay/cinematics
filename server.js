@@ -23,7 +23,7 @@ app.use(methodOverride('X-HTTP-Method-Override')); // override with the X-HTTP-M
 app.use(express.static(__dirname + '/public')); // set the static files location /public/img will be /img for users
 
 // routes ==================================================
-require('./app/routes')(app); // configure our routes
+require('./app/routes')(app, Db.Db("cinematics")); // configure our routes
 
 // start app ===============================================
 app.listen(port);										// startup our app at http://localhost:8080
