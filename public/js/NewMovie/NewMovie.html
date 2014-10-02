@@ -47,14 +47,19 @@
         created: function(){
             this.movie = {title:null,description:null}
             this.ajax = document.createElement('core-ajax');
+            this.toast =  document.querySelector('#toast1');
         },
         buttonClick: function(e, detail, sender){
             if(this.movie.title != null && this.movie.description != null) {
-              this.ajax.url = "/api/cinematic";
+              this.ajax.url = "/api/cinematics";
               this.ajax.method = "POST";
               this.handleAs = "JSON";
               this.ajax.params = JSON.stringify(this.movie);//"{'movie':"+JSON.stringify(this.movie)+"}";
               this.ajax.go();
+              this.toast.text = "Added !";
+              this.toast.show();
+              this.movie.title = null;
+              this.movie.description = null;           
             }
         }       
     });

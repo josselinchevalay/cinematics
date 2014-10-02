@@ -14,8 +14,9 @@ module.exports = function(app, Db) {
 		resp.json(Db.where().value());
 	});
 	// post
-	app.post("/api/cinematic", function(req, resp){
-		Db.push(req.body);
+	app.post("/api/cinematics", function(req, resp){
+		//console.log(req.body);
+		Db.push(req.body).value();
 	});
 	/*app.get('/api/nerds', function(req, res) {
 		// use mongoose to get all nerds in the database
