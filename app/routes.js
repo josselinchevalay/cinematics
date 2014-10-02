@@ -13,6 +13,10 @@ module.exports = function(app, Db) {
 	app.get("/api/cinematics", function(req, resp){
 		resp.json(Db.where().value());
 	});
+	// post
+	app.post("/api/cinematic", function(req, resp){
+		Db.push(req.body);
+	});
 	/*app.get('/api/nerds', function(req, res) {
 		// use mongoose to get all nerds in the database
 		Nerd.find(function(err, nerds) {

@@ -1,0 +1,62 @@
+<link rel="import" href="../../libs/polymer/polymer.html">
+<link rel="import" href="../../libs/paper-input/paper-input.html">
+<link rel="import" href="../../libs/paper-button/paper-button.html">
+<link rel="import" href="../../libs/core-ajax/core-ajax.html">
+<polymer-element name="new-movie">
+    <template>
+    <style>
+    :host {
+        display: block;
+        position: relative;
+        background-color: white;
+        padding: 20px;
+        width: 100%;
+        font-size: 1.2rem;
+        font-weight: 300;
+        margin-bottom: 30px;
+    }
+
+    #my-button {
+        background: #4285f4;
+        color: #fff;
+    }
+
+    #my-button:hover {
+        background: #2a56c6;
+    }
+
+    #my-button::shadow #ripple {
+        color: #2a56c6;
+    }
+    
+    </style>
+
+    <core-ajax></core-ajax>
+
+    <div class="form-header" layout  center>
+        <paper-input label="Title" required error="This input requires a value!" value="{{movie.title}}"></paper-input>
+        <br/>
+        <paper-input multiline label="Description" required error="This input requires a value!" value="{{movie.description}}"></paper-input>
+        <br/>
+        <paper-button raisedButton id="my-button" class="colored" label="Add" on-click="{{buttonClick}};"></paper-button>
+    </div>
+    <content></content>
+    </template>
+    <script>
+    Polymer('new-movie', {
+        created: function(){
+            this.movie = {title:null,description:null}
+            this.ajax = document.createElement('core-ajax');
+        },
+        buttonClick: function(e, detail, sender){
+            if(this.movie.title != null && this.movie.description != null) {
+              this.ajax.url = "/api/cinematic";
+              this.ajax.method = "POST";
+              this.handleAs = "JSON";
+              this.ajax.params = JSON.stringify(this.movie);//"{'movie':"+JSON.stringify(this.movie)+"}";
+              this.ajax.go();
+            }
+        }       
+    });
+    </script>
+</polymer-element>

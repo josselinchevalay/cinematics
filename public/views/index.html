@@ -14,6 +14,7 @@ href="../libs/core-toolbar/core-toolbar.html">
 <link rel="import"
 href="../libs/paper-tabs/paper-tabs.html">
 <link rel="import" href="./js/PostList/PostList.html">
+<link rel="import" href="./js/NewMovie/NewMovie.html">
 <style>
 html,body {
 height: 100%;
@@ -61,8 +62,9 @@ width: 400px;
 <paper-tab name="favorites">Favorites</paper-tab>
 </paper-tabs>
 </core-toolbar>
-<div class="container" layout vertical center>
  <div class="container" layout vertical center>
+       <new-movie></new-movie>
+       
       <post-list show="all"></post-list>
     </div>
   </core-header-panel>
