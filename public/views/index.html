@@ -17,6 +17,7 @@ href="../libs/paper-tabs/paper-tabs.html">
 href="../libs/paper-toast/paper-toast.html">
 <link rel="import" href="./js/PostList/PostList.html">
 <link rel="import" href="./js/NewMovie/NewMovie.html">
+<link rel="import" href="./js/CinematicsService/CinematicsService.html">
 <style>
 html,body {
 height: 100%;
@@ -65,19 +66,22 @@ width: 400px;
 </paper-tabs>
 </core-toolbar>
  <div class="container" layout vertical center>
+        <cinematics-service id="service">
+        </cinematics-service>
+
        <new-movie></new-movie>
        
       <post-list show="all"></post-list>
+
       <paper-toast id="toast1"></paper-toast>
     </div>
   </core-header-panel>
 </div>
 </core-header-panel>
 <script>
-var tabs = document.querySelector('paper-tabs');
-tabs.addEventListener('core-select', function() {
-console.log("Selected: " + tabs.selected);
-});
+  document.querySelector("#service").addEventListener("service-get-cinematics", function(){
+        document.querySelector("post-list").cinematics = document.querySelector("#service").cinematics;
+  });
 </script>
 </body>
 </html>

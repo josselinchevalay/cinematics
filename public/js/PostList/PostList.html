@@ -1,7 +1,5 @@
 <link rel="import" href="../../libs/polymer/polymer.html">
-<link rel="import" href="../PostService/PostService.html">
 <link rel="import" href="../PostCard/PostCard.html">
-
 <polymer-element name="post-list" attributes="show">
   <template>
     <style>
@@ -12,24 +10,23 @@
     post-card {
       margin-bottom: 30px;
     }
-    </style>
-
-    <post-service id="service" posts="{{posts}}">
-    </post-service>
+    </style>   
     
     <div layout vertical center>
 
-      <template repeat="{{post in posts}}">
+      <template repeat="{{cinematic in cinematics}}">
         <post-card>
-          <!--<img src="{{post.avatar}}" width="70" height="70">-->
-          <h2>{{post.title}}</h2>
-          <p>{{post.description}}</p>
+          <h2>{{cinematic.title}}</h2>
+          <p>{{cinematic.description}}</p>
         </post-card>
-      </template>
-      
+      </template>     
     </div>
   </template>
   <script>
-  Polymer({});
+  Polymer("post-list",{
+   ready: function(){
+      this.cinematics = this.cinematics || [];
+    }
+  });
   </script>
 </polymer-element>

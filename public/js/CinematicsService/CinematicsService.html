@@ -1,0 +1,42 @@
+<link rel="import" href="../../libs/polymer/polymer.html">
+<link rel="import" href="../../libs/core-ajax/core-ajax.html">
+<polymer-element name="cinematics-service" attributes="cinematics">
+    <template>
+        <style type="text/css">
+            :host{
+                display: none;
+            }
+        </style>
+    </template>
+    <script>
+    Polymer("cinematics-service",{
+       ready: function(){
+            this.url = "/api/cinematics";
+            this.cinematics = [];
+            this.getMovies();
+        },
+        postMovie: function(movie){
+            var ajax =  document.createElement("core-ajax");
+            ajax.method = "POST";
+            ajax.url = this.url;
+            ajax.params = movie;
+            ajax.go();
+            this.getMovies();
+        },
+       getMovies: function(){
+            var self = this;
+            var ajax =  document.createElement("core-ajax");
+            ajax.method = "GET";
+            ajax.url = this.url;
+            ajax.go();
+            ajax.addEventListener('core-response', function() {
+                self.cinematics = JSON.parse(this.response);
+                self.fire("service-get-cinematics");
+            });
+            return this.cinematics;
+        },
+       putMovie: function(movie){},
+       deleteMovie: function(movie){},
+    });
+    </script>
+</polymer-element>
