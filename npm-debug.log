@@ -1,0 +1,508 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'C:\\Program Files\\nodejs\\\\node.exe',
+1 verbose cli   'C:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npm-cli.js',
+1 verbose cli   'update',
+1 verbose cli   '--save',
+1 verbose cli   'lowdb' ]
+2 info using npm@1.3.5
+3 info using node@v0.10.15
+4 verbose node symlink C:\Program Files\nodejs\\node.exe
+5 verbose cache add [ 'lowdb', '*' ]
+6 verbose cache add name="lowdb" spec="*" args=["lowdb","*"]
+7 verbose parsed url { protocol: null,
+7 verbose parsed url   slashes: null,
+7 verbose parsed url   auth: null,
+7 verbose parsed url   host: null,
+7 verbose parsed url   port: null,
+7 verbose parsed url   hostname: null,
+7 verbose parsed url   hash: null,
+7 verbose parsed url   search: null,
+7 verbose parsed url   query: null,
+7 verbose parsed url   pathname: '*',
+7 verbose parsed url   path: '*',
+7 verbose parsed url   href: '*' }
+8 verbose addNamed [ 'lowdb', '*' ]
+9 verbose addNamed [ null, '*' ]
+10 silly lockFile 784e8213-lowdb lowdb@*
+11 verbose lock lowdb@* C:\Users\josselin\AppData\Roaming\npm-cache\784e8213-lowdb.lock
+12 silly addNameRange { name: 'lowdb', range: '*', hasData: false }
+13 verbose url raw lowdb
+14 verbose url resolving [ 'https://registry.npmjs.org/', './lowdb' ]
+15 verbose url resolved https://registry.npmjs.org/lowdb
+16 info trying registry request attempt 1 at 16:52:33
+17 verbose etag "5M79LMMPCHXNI7MSCE4LBY2RQ"
+18 http GET https://registry.npmjs.org/lowdb
+19 http 304 https://registry.npmjs.org/lowdb
+20 silly registry.get cb [ 304,
+20 silly registry.get   { date: 'Thu, 09 Oct 2014 14:52:37 GMT',
+20 silly registry.get     server: 'Apache',
+20 silly registry.get     via: '1.1 varnish',
+20 silly registry.get     'last-modified': 'Thu, 09 Oct 2014 14:52:38 GMT',
+20 silly registry.get     'cache-control': 'max-age=60',
+20 silly registry.get     etag: '"5M79LMMPCHXNI7MSCE4LBY2RQ"',
+20 silly registry.get     'x-served-by': 'cache-ams4125-AMS',
+20 silly registry.get     'x-cache': 'MISS',
+20 silly registry.get     'x-cache-hits': '0',
+20 silly registry.get     'x-timer': 'S1412866357.984491,VS0,VE828',
+20 silly registry.get     vary: 'Accept',
+20 silly registry.get     'content-length': '0',
+20 silly registry.get     'keep-alive': 'timeout=10, max=50',
+20 silly registry.get     connection: 'Keep-Alive' } ]
+21 verbose etag lowdb from cache
+22 silly addNameRange number 2 { name: 'lowdb', range: '*', hasData: true }
+23 silly addNameRange versions [ 'lowdb',
+23 silly addNameRange   [ '0.1.0',
+23 silly addNameRange     '0.2.0',
+23 silly addNameRange     '0.3.0',
+23 silly addNameRange     '0.3.1',
+23 silly addNameRange     '0.3.2',
+23 silly addNameRange     '0.4.0',
+23 silly addNameRange     '0.4.1',
+23 silly addNameRange     '0.4.2' ] ]
+24 verbose addNamed [ 'lowdb', '0.4.2' ]
+25 verbose addNamed [ '0.4.2', '0.4.2' ]
+26 silly lockFile 99109714-lowdb-0-4-2 lowdb@0.4.2
+27 verbose lock lowdb@0.4.2 C:\Users\josselin\AppData\Roaming\npm-cache\99109714-lowdb-0-4-2.lock
+28 silly lockFile 99109714-lowdb-0-4-2 lowdb@0.4.2
+29 silly lockFile 99109714-lowdb-0-4-2 lowdb@0.4.2
+30 silly lockFile 784e8213-lowdb lowdb@*
+31 silly lockFile 784e8213-lowdb lowdb@*
+32 info outdated updating [ [ 'C:\\Users\\josselin\\Documents\\GitHub\\cinematics',
+32 info outdated     'lowdb',
+32 info outdated     '0.4.1',
+32 info outdated     '0.4.2',
+32 info outdated     '*' ] ]
+33 verbose install where,what [ 'C:\\Users\\josselin\\Documents\\GitHub\\cinematics',
+33 verbose install   [ 'lowdb@0.4.2' ] ]
+34 verbose cache add [ 'lowdb@0.4.2', null ]
+35 verbose cache add name=undefined spec="lowdb@0.4.2" args=["lowdb@0.4.2",null]
+36 verbose parsed url { protocol: null,
+36 verbose parsed url   slashes: null,
+36 verbose parsed url   auth: null,
+36 verbose parsed url   host: null,
+36 verbose parsed url   port: null,
+36 verbose parsed url   hostname: null,
+36 verbose parsed url   hash: null,
+36 verbose parsed url   search: null,
+36 verbose parsed url   query: null,
+36 verbose parsed url   pathname: 'lowdb@0.4.2',
+36 verbose parsed url   path: 'lowdb@0.4.2',
+36 verbose parsed url   href: 'lowdb@0.4.2' }
+37 verbose cache add name="lowdb" spec="0.4.2" args=["lowdb","0.4.2"]
+38 verbose parsed url { protocol: null,
+38 verbose parsed url   slashes: null,
+38 verbose parsed url   auth: null,
+38 verbose parsed url   host: null,
+38 verbose parsed url   port: null,
+38 verbose parsed url   hostname: null,
+38 verbose parsed url   hash: null,
+38 verbose parsed url   search: null,
+38 verbose parsed url   query: null,
+38 verbose parsed url   pathname: '0.4.2',
+38 verbose parsed url   path: '0.4.2',
+38 verbose parsed url   href: '0.4.2' }
+39 verbose addNamed [ 'lowdb', '0.4.2' ]
+40 verbose addNamed [ '0.4.2', '0.4.2' ]
+41 silly lockFile 99109714-lowdb-0-4-2 lowdb@0.4.2
+42 verbose lock lowdb@0.4.2 C:\Users\josselin\AppData\Roaming\npm-cache\99109714-lowdb-0-4-2.lock
+43 verbose url raw lowdb/0.4.2
+44 verbose url resolving [ 'https://registry.npmjs.org/', './lowdb/0.4.2' ]
+45 verbose url resolved https://registry.npmjs.org/lowdb/0.4.2
+46 info trying registry request attempt 1 at 16:52:34
+47 verbose etag "5M79LMMPCHXNI7MSCE4LBY2RQ"
+48 http GET https://registry.npmjs.org/lowdb/0.4.2
+49 http 304 https://registry.npmjs.org/lowdb/0.4.2
+50 silly registry.get cb [ 304,
+50 silly registry.get   { date: 'Thu, 09 Oct 2014 14:52:38 GMT',
+50 silly registry.get     server: 'Apache',
+50 silly registry.get     via: '1.1 varnish',
+50 silly registry.get     'last-modified': 'Thu, 09 Oct 2014 14:52:39 GMT',
+50 silly registry.get     'cache-control': 'max-age=60',
+50 silly registry.get     etag: '"5M79LMMPCHXNI7MSCE4LBY2RQ"',
+50 silly registry.get     'x-served-by': 'cache-ams4135-AMS',
+50 silly registry.get     'x-cache': 'MISS',
+50 silly registry.get     'x-cache-hits': '0',
+50 silly registry.get     'x-timer': 'S1412866358.950655,VS0,VE97',
+50 silly registry.get     vary: 'Accept',
+50 silly registry.get     'content-length': '0',
+50 silly registry.get     'keep-alive': 'timeout=10, max=50',
+50 silly registry.get     connection: 'Keep-Alive' } ]
+51 verbose etag lowdb/0.4.2 from cache
+52 silly lockFile 99109714-lowdb-0-4-2 lowdb@0.4.2
+53 silly lockFile 99109714-lowdb-0-4-2 lowdb@0.4.2
+54 silly resolved [ { name: 'lowdb',
+54 silly resolved     version: '0.4.2',
+54 silly resolved     description: 'Flat JSON file database',
+54 silly resolved     keywords:
+54 silly resolved      [ 'flat',
+54 silly resolved        'file',
+54 silly resolved        'database',
+54 silly resolved        'JSON',
+54 silly resolved        'JSONDatabase',
+54 silly resolved        'lo-dash',
+54 silly resolved        'lodash',
+54 silly resolved        'underscore',
+54 silly resolved        'underscore-db',
+54 silly resolved        'embed',
+54 silly resolved        'embeddable' ],
+54 silly resolved     main: 'src/index.js',
+54 silly resolved     scripts: { test: 'mocha', precommit: 'npm test' },
+54 silly resolved     repository: { type: 'git', url: 'git://github.com/typicode/lowdb.git' },
+54 silly resolved     author: { name: 'Typicode', email: 'typicode@gmail.com' },
+54 silly resolved     license: 'MIT',
+54 silly resolved     bugs: { url: 'https://github.com/typicode/lowdb/issues' },
+54 silly resolved     homepage: 'https://github.com/typicode/lowdb',
+54 silly resolved     dependencies:
+54 silly resolved      { 'graceful-fs': '^3.0.2',
+54 silly resolved        lodash: '~2.4.1',
+54 silly resolved        mv: '^2.0.3',
+54 silly resolved        'temp-write': '^1.0.0' },
+54 silly resolved     devDependencies:
+54 silly resolved      { husky: '^0.6.1',
+54 silly resolved        mocha: '^1.21.4',
+54 silly resolved        rimraf: '^2.2.8',
+54 silly resolved        'underscore-db': '^0.8.0' },
+54 silly resolved     readme: '# LowDB [![NPM version](https://badge.fury.io/js/lowdb.svg)](http://badge.fury.io/js/lowdb) [![Build Status](https://travis-ci.org/typicode/lowdb.svg?branch=master)](https://travis-ci.org/typicode/lowdb)\n\n> Flat JSON file database for Node\n\n* Serverless\n* Multiple databases\n* In-memory or disk-based\n* 80+ methods from Lo-Dash API\n* Asynchronous and fault-tolerant writing\n* Extendable\n\nLowDB uses Lo-Dash functional programming API instead of a MongoDB-like API. This makes it quite unique and different.\n\n_LowDB powers [JSON Server](https://github.com/typicode/json-server) and [JSONPlaceholder](http://jsonplaceholder.typicode.com/). If you need something similar for the browser, check [Underscore-db](https://github.com/typicode/underscore-db)._\n\n## Usage\n\n```javascript\nvar low = require(\'lowdb\')\nvar db = low(\'db.json\')\n\ndb(\'songs\').push({ title: \'low!\'})\n```\n\nDatabase is automatically created and saved to `db.json` in a readable format.\n\n```javascript\n{\n  "songs": [\n    {\n      "title": "low!"\n    }\n  ]\n}\n```\n\nData can be queried and manipulated using any Lo-Dash method.\n\n```javascript\nvar song = db(\'songs\').find({ title: \'low!\' }).value()\ndb(\'songs\').remove({ title: \'low!\' })\n```\n\nYou can also use id-based methods by extending LowDB with [Underscore-db](https://github.com/typicode/underscore-db).\n\n## API\n\n__low([filename])__\n\nCreates a disk-based or in-memory database instance. If a filename is provided, it loads or creates it.\n\n```javascript\nvar db = low()          // in-memory\nvar db = low(\'db.json\') // disk-based\n```\n\n__low.mixin(source)__\n\nUse it to extend Lo-Dash globally with your own utility functions or third-party libraries.\n\n```javascript\n// Must be called before calling db(\'songs\') for functions to be available.\nlow.mixin({\n  second: function(array) {\n    if (array.length >= 2) return array[1]\n  }\n})\n\nvar song = db(\'songs\').second().value()\n```\n\n__db.object__\n\nDatabase object. Useful if you want to access the content of your JSON file and don\'t want to go through Lo-Dash methods.\n\n```javascript\nconsole.log(db.object) // { songs: [ { title: \'low!\' } ] }\ndb(\'songs\').value() === db.object.songs\n```\n\n__db.save()__\n\nLowDB automatically saves to disk. However, in case you directly modify the content of the database object, you\'ll need to manually call `save`.\n\n```javascript\ndelete db.object.songs\ndb.save()\n```\n\n## Documentation\n\n### Operations\n\nWith LowDB you get access to the entire [Lo-Dash API](http://lodash.com/), so there\'s many, many ways to query and manipulate data. Here are a few examples to get you started.\n\nSort the top five songs.\n\n```javascript\ndb(\'songs\')\n  .where({published: true})\n  .sortBy(\'views\')\n  .first(5)\n  .value()\n```\n\nRetrieve song titles.\n\n```javascript\ndb(\'songs\')\n  .pluck(\'titles\')\n  .value()\n```\n\nGet the number of songs.\n\n```javascript\ndb(\'songs\').size()\n```\n\nMake a deep clone of songs.\n\n```javascript\ndb(\'songs\').cloneDeep().value\n```\n\nUpdate a song.\n\n```javascript\ndb(\'songs\').find({ title: \'low!\' }).assign({ title: \'hi!\'})\n```\n\nRemove songs.\n\n```javascript\ndb(\'songs\').remove({ title: \'low!\' })\n```\n\n### Id-based resources support\n\nBeing able to retrieve data using an id can be quite useful, particularly in servers. To add id-based resources support to LowDB, you have 2 options.\n\n[Underscore-db](https://github.com/typicode/underscore-db) provides a set of helpers for creating and manipulating id-based resources.\n\n```javascript\nlow.mixin(require(\'underscore-db\'))\n\nvar db = low(\'db.json\')\n\nvar songId = db(\'songs\').insert({ title: \'low!\' }).value().id\nvar song   = db(\'songs\').get(songId).value()\n```\n\nOr simply use [uuid](https://github.com/broofa/node-uuid).\n\n```javascript\nvar uuid = require(\'uuid\')\n\nvar songId = db(\'songs\').push({ id: uuid(), title: \'low!\' }).value().id\nvar song   = db(\'songs\').find({ id: songId }).value()\n```\n\nIn both cases, your `db.json` will then look like this.\n\n```javascript\n{\n  "songs": [\n    {\n      "id": "e31aa48c-a9d8-4f79-9fce-ded4c16c3c4c",\n      "title": "low!"\n    }\n  ]\n}\n```\n\n## Changelog\n\nSee details changes for each version in the [release notes](https://github.com/typicode/lowdb/releases).\n\n## Limits\n\nLowDB is a convenient method for storing data without setting up a database server. It\'s fast enough and safe to be used as an embedded database.\n\nHowever, if you need high performance and scalability more than simplicity, you should stick to databases like MongoDB.\n\n## License\n\nLowDB is released under the MIT License.\n',
+54 silly resolved     readmeFilename: 'README.md',
+54 silly resolved     _id: 'lowdb@0.4.2',
+54 silly resolved     _from: 'lowdb@0.4.2' } ]
+55 info install lowdb@0.4.2 into C:\Users\josselin\Documents\GitHub\cinematics
+56 info installOne lowdb@0.4.2
+57 info C:\Users\josselin\Documents\GitHub\cinematics\node_modules\lowdb unbuild
+58 info preuninstall lowdb@0.4.1
+59 info uninstall lowdb@0.4.1
+60 verbose true,C:\Users\josselin\Documents\GitHub\cinematics\node_modules,C:\Users\josselin\Documents\GitHub\cinematics\node_modules unbuild lowdb@0.4.1
+61 info postuninstall lowdb@0.4.1
+62 verbose tar unpack C:\Users\josselin\AppData\Roaming\npm-cache\lowdb\0.4.2\package.tgz
+63 silly lockFile 8563f992-ub-cinematics-node-modules-lowdb tar://C:\Users\josselin\Documents\GitHub\cinematics\node_modules\lowdb
+64 verbose lock tar://C:\Users\josselin\Documents\GitHub\cinematics\node_modules\lowdb C:\Users\josselin\AppData\Roaming\npm-cache\8563f992-ub-cinematics-node-modules-lowdb.lock
+65 silly lockFile c7cd5b69-pm-cache-lowdb-0-4-2-package-tgz tar://C:\Users\josselin\AppData\Roaming\npm-cache\lowdb\0.4.2\package.tgz
+66 verbose lock tar://C:\Users\josselin\AppData\Roaming\npm-cache\lowdb\0.4.2\package.tgz C:\Users\josselin\AppData\Roaming\npm-cache\c7cd5b69-pm-cache-lowdb-0-4-2-package-tgz.lock
+67 silly gunzTarPerm modes [ '755', '644' ]
+68 silly gunzTarPerm extractEntry package.json
+69 silly gunzTarPerm modified mode [ 'package.json', 438, 420 ]
+70 silly gunzTarPerm extractEntry .npmignore
+71 silly gunzTarPerm modified mode [ '.npmignore', 438, 420 ]
+72 silly gunzTarPerm extractEntry README.md
+73 silly gunzTarPerm modified mode [ 'README.md', 438, 420 ]
+74 silly gunzTarPerm extractEntry LICENSE
+75 silly gunzTarPerm modified mode [ 'LICENSE', 438, 420 ]
+76 silly gunzTarPerm extractEntry src/index.js
+77 silly gunzTarPerm modified mode [ 'src/index.js', 438, 420 ]
+78 silly gunzTarPerm extractEntry src/store.js
+79 silly gunzTarPerm modified mode [ 'src/store.js', 438, 420 ]
+80 silly gunzTarPerm extractEntry src/writer.js
+81 silly gunzTarPerm modified mode [ 'src/writer.js', 438, 420 ]
+82 silly gunzTarPerm extractEntry tmp/test.json
+83 silly gunzTarPerm modified mode [ 'tmp/test.json', 438, 420 ]
+84 silly gunzTarPerm extractEntry tmp/test.txt
+85 silly gunzTarPerm modified mode [ 'tmp/test.txt', 438, 420 ]
+86 silly lockFile 8563f992-ub-cinematics-node-modules-lowdb tar://C:\Users\josselin\Documents\GitHub\cinematics\node_modules\lowdb
+87 silly lockFile 8563f992-ub-cinematics-node-modules-lowdb tar://C:\Users\josselin\Documents\GitHub\cinematics\node_modules\lowdb
+88 silly lockFile c7cd5b69-pm-cache-lowdb-0-4-2-package-tgz tar://C:\Users\josselin\AppData\Roaming\npm-cache\lowdb\0.4.2\package.tgz
+89 silly lockFile c7cd5b69-pm-cache-lowdb-0-4-2-package-tgz tar://C:\Users\josselin\AppData\Roaming\npm-cache\lowdb\0.4.2\package.tgz
+90 info preinstall lowdb@0.4.2
+91 verbose readDependencies using package.json deps
+92 verbose readDependencies using package.json deps
+93 verbose cache add [ 'graceful-fs@^3.0.2', null ]
+94 verbose cache add name=undefined spec="graceful-fs@^3.0.2" args=["graceful-fs@^3.0.2",null]
+95 verbose parsed url { protocol: null,
+95 verbose parsed url   slashes: null,
+95 verbose parsed url   auth: null,
+95 verbose parsed url   host: null,
+95 verbose parsed url   port: null,
+95 verbose parsed url   hostname: null,
+95 verbose parsed url   hash: null,
+95 verbose parsed url   search: null,
+95 verbose parsed url   query: null,
+95 verbose parsed url   pathname: 'graceful-fs@^3.0.2',
+95 verbose parsed url   path: 'graceful-fs@^3.0.2',
+95 verbose parsed url   href: 'graceful-fs@^3.0.2' }
+96 verbose cache add name="graceful-fs" spec="^3.0.2" args=["graceful-fs","^3.0.2"]
+97 verbose parsed url { protocol: null,
+97 verbose parsed url   slashes: null,
+97 verbose parsed url   auth: null,
+97 verbose parsed url   host: null,
+97 verbose parsed url   port: null,
+97 verbose parsed url   hostname: null,
+97 verbose parsed url   hash: null,
+97 verbose parsed url   search: null,
+97 verbose parsed url   query: null,
+97 verbose parsed url   pathname: '^3.0.2',
+97 verbose parsed url   path: '^3.0.2',
+97 verbose parsed url   href: '^3.0.2' }
+98 verbose addNamed [ 'graceful-fs', '^3.0.2' ]
+99 verbose addNamed [ null, null ]
+100 silly lockFile 84148ef6-graceful-fs-3-0-2 graceful-fs@^3.0.2
+101 verbose lock graceful-fs@^3.0.2 C:\Users\josselin\AppData\Roaming\npm-cache\84148ef6-graceful-fs-3-0-2.lock
+102 verbose cache add [ 'lodash@~2.4.1', null ]
+103 verbose cache add name=undefined spec="lodash@~2.4.1" args=["lodash@~2.4.1",null]
+104 verbose parsed url { protocol: null,
+104 verbose parsed url   slashes: null,
+104 verbose parsed url   auth: null,
+104 verbose parsed url   host: null,
+104 verbose parsed url   port: null,
+104 verbose parsed url   hostname: null,
+104 verbose parsed url   hash: null,
+104 verbose parsed url   search: null,
+104 verbose parsed url   query: null,
+104 verbose parsed url   pathname: 'lodash@~2.4.1',
+104 verbose parsed url   path: 'lodash@~2.4.1',
+104 verbose parsed url   href: 'lodash@~2.4.1' }
+105 verbose cache add name="lodash" spec="~2.4.1" args=["lodash","~2.4.1"]
+106 verbose parsed url { protocol: null,
+106 verbose parsed url   slashes: null,
+106 verbose parsed url   auth: null,
+106 verbose parsed url   host: null,
+106 verbose parsed url   port: null,
+106 verbose parsed url   hostname: null,
+106 verbose parsed url   hash: null,
+106 verbose parsed url   search: null,
+106 verbose parsed url   query: null,
+106 verbose parsed url   pathname: '~2.4.1',
+106 verbose parsed url   path: '~2.4.1',
+106 verbose parsed url   href: '~2.4.1' }
+107 verbose addNamed [ 'lodash', '~2.4.1' ]
+108 verbose addNamed [ null, '>=2.4.1-0 <2.5.0-0' ]
+109 silly lockFile 257f9ab3-lodash-2-4-1 lodash@~2.4.1
+110 verbose lock lodash@~2.4.1 C:\Users\josselin\AppData\Roaming\npm-cache\257f9ab3-lodash-2-4-1.lock
+111 verbose cache add [ 'mv@^2.0.3', null ]
+112 verbose cache add name=undefined spec="mv@^2.0.3" args=["mv@^2.0.3",null]
+113 verbose parsed url { protocol: null,
+113 verbose parsed url   slashes: null,
+113 verbose parsed url   auth: null,
+113 verbose parsed url   host: null,
+113 verbose parsed url   port: null,
+113 verbose parsed url   hostname: null,
+113 verbose parsed url   hash: null,
+113 verbose parsed url   search: null,
+113 verbose parsed url   query: null,
+113 verbose parsed url   pathname: 'mv@^2.0.3',
+113 verbose parsed url   path: 'mv@^2.0.3',
+113 verbose parsed url   href: 'mv@^2.0.3' }
+114 verbose cache add name="mv" spec="^2.0.3" args=["mv","^2.0.3"]
+115 verbose parsed url { protocol: null,
+115 verbose parsed url   slashes: null,
+115 verbose parsed url   auth: null,
+115 verbose parsed url   host: null,
+115 verbose parsed url   port: null,
+115 verbose parsed url   hostname: null,
+115 verbose parsed url   hash: null,
+115 verbose parsed url   search: null,
+115 verbose parsed url   query: null,
+115 verbose parsed url   pathname: '^2.0.3',
+115 verbose parsed url   path: '^2.0.3',
+115 verbose parsed url   href: '^2.0.3' }
+116 verbose addNamed [ 'mv', '^2.0.3' ]
+117 verbose addNamed [ null, null ]
+118 silly lockFile e7c44455-mv-2-0-3 mv@^2.0.3
+119 verbose lock mv@^2.0.3 C:\Users\josselin\AppData\Roaming\npm-cache\e7c44455-mv-2-0-3.lock
+120 verbose cache add [ 'temp-write@^1.0.0', null ]
+121 verbose cache add name=undefined spec="temp-write@^1.0.0" args=["temp-write@^1.0.0",null]
+122 verbose parsed url { protocol: null,
+122 verbose parsed url   slashes: null,
+122 verbose parsed url   auth: null,
+122 verbose parsed url   host: null,
+122 verbose parsed url   port: null,
+122 verbose parsed url   hostname: null,
+122 verbose parsed url   hash: null,
+122 verbose parsed url   search: null,
+122 verbose parsed url   query: null,
+122 verbose parsed url   pathname: 'temp-write@^1.0.0',
+122 verbose parsed url   path: 'temp-write@^1.0.0',
+122 verbose parsed url   href: 'temp-write@^1.0.0' }
+123 verbose cache add name="temp-write" spec="^1.0.0" args=["temp-write","^1.0.0"]
+124 verbose parsed url { protocol: null,
+124 verbose parsed url   slashes: null,
+124 verbose parsed url   auth: null,
+124 verbose parsed url   host: null,
+124 verbose parsed url   port: null,
+124 verbose parsed url   hostname: null,
+124 verbose parsed url   hash: null,
+124 verbose parsed url   search: null,
+124 verbose parsed url   query: null,
+124 verbose parsed url   pathname: '^1.0.0',
+124 verbose parsed url   path: '^1.0.0',
+124 verbose parsed url   href: '^1.0.0' }
+125 verbose addNamed [ 'temp-write', '^1.0.0' ]
+126 verbose addNamed [ null, null ]
+127 silly lockFile 48cd698b-temp-write-1-0-0 temp-write@^1.0.0
+128 verbose lock temp-write@^1.0.0 C:\Users\josselin\AppData\Roaming\npm-cache\48cd698b-temp-write-1-0-0.lock
+129 info addNameTag [ 'graceful-fs', '^3.0.2' ]
+130 info addNameTag [ 'mv', '^2.0.3' ]
+131 silly addNameRange { name: 'lodash', range: '>=2.4.1-0 <2.5.0-0', hasData: false }
+132 info addNameTag [ 'temp-write', '^1.0.0' ]
+133 verbose url raw mv
+134 verbose url resolving [ 'https://registry.npmjs.org/', './mv' ]
+135 verbose url resolved https://registry.npmjs.org/mv
+136 info trying registry request attempt 1 at 16:52:35
+137 verbose etag "C9STE96S8O6MKL25CV3SC6EBH"
+138 http GET https://registry.npmjs.org/mv
+139 verbose url raw graceful-fs
+140 verbose url resolving [ 'https://registry.npmjs.org/', './graceful-fs' ]
+141 verbose url resolved https://registry.npmjs.org/graceful-fs
+142 info trying registry request attempt 1 at 16:52:35
+143 verbose etag "45M7M12CNMFW1XVQTU3A8HYAJ"
+144 http GET https://registry.npmjs.org/graceful-fs
+145 verbose url raw lodash
+146 verbose url resolving [ 'https://registry.npmjs.org/', './lodash' ]
+147 verbose url resolved https://registry.npmjs.org/lodash
+148 info trying registry request attempt 1 at 16:52:35
+149 verbose etag "EF38GX9ARU19ST2K758MOPE83"
+150 http GET https://registry.npmjs.org/lodash
+151 verbose url raw temp-write
+152 verbose url resolving [ 'https://registry.npmjs.org/', './temp-write' ]
+153 verbose url resolved https://registry.npmjs.org/temp-write
+154 info trying registry request attempt 1 at 16:52:35
+155 verbose etag "CBA3YBG5KVIZL59VLXIXXYYFM"
+156 http GET https://registry.npmjs.org/temp-write
+157 http 304 https://registry.npmjs.org/graceful-fs
+158 silly registry.get cb [ 304,
+158 silly registry.get   { date: 'Thu, 09 Oct 2014 14:52:39 GMT',
+158 silly registry.get     server: 'Apache',
+158 silly registry.get     via: '1.1 varnish',
+158 silly registry.get     'last-modified': 'Thu, 09 Oct 2014 14:51:53 GMT',
+158 silly registry.get     'cache-control': 'max-age=60',
+158 silly registry.get     etag: '"45M7M12CNMFW1XVQTU3A8HYAJ"',
+158 silly registry.get     'x-served-by': 'cache-ams4125-AMS',
+158 silly registry.get     'x-cache': 'HIT',
+158 silly registry.get     'x-cache-hits': '5',
+158 silly registry.get     'x-timer': 'S1412866359.395071,VS0,VE0',
+158 silly registry.get     vary: 'Accept',
+158 silly registry.get     'content-length': '0',
+158 silly registry.get     'keep-alive': 'timeout=10, max=50',
+158 silly registry.get     connection: 'Keep-Alive' } ]
+159 verbose etag graceful-fs from cache
+160 http 304 https://registry.npmjs.org/mv
+161 silly registry.get cb [ 304,
+161 silly registry.get   { date: 'Thu, 09 Oct 2014 14:52:39 GMT',
+161 silly registry.get     server: 'Apache',
+161 silly registry.get     via: '1.1 varnish',
+161 silly registry.get     'last-modified': 'Thu, 09 Oct 2014 14:52:39 GMT',
+161 silly registry.get     'cache-control': 'max-age=60',
+161 silly registry.get     etag: '"C9STE96S8O6MKL25CV3SC6EBH"',
+161 silly registry.get     'x-served-by': 'cache-ams4134-AMS',
+161 silly registry.get     'x-cache': 'HIT',
+161 silly registry.get     'x-cache-hits': '1',
+161 silly registry.get     'x-timer': 'S1412866359.403450,VS0,VE0',
+161 silly registry.get     vary: 'Accept',
+161 silly registry.get     'content-length': '0',
+161 silly registry.get     'keep-alive': 'timeout=10, max=50',
+161 silly registry.get     connection: 'Keep-Alive' } ]
+162 verbose etag mv from cache
+163 http 304 https://registry.npmjs.org/temp-write
+164 silly registry.get cb [ 304,
+164 silly registry.get   { date: 'Thu, 09 Oct 2014 14:52:39 GMT',
+164 silly registry.get     server: 'Apache',
+164 silly registry.get     via: '1.1 varnish',
+164 silly registry.get     'last-modified': 'Thu, 09 Oct 2014 14:52:39 GMT',
+164 silly registry.get     'cache-control': 'max-age=60',
+164 silly registry.get     etag: '"CBA3YBG5KVIZL59VLXIXXYYFM"',
+164 silly registry.get     'x-served-by': 'cache-ams4131-AMS',
+164 silly registry.get     'x-cache': 'HIT',
+164 silly registry.get     'x-cache-hits': '1',
+164 silly registry.get     'x-timer': 'S1412866359.403175,VS0,VE0',
+164 silly registry.get     vary: 'Accept',
+164 silly registry.get     'content-length': '0',
+164 silly registry.get     'keep-alive': 'timeout=10, max=50',
+164 silly registry.get     connection: 'Keep-Alive' } ]
+165 verbose etag temp-write from cache
+166 http 304 https://registry.npmjs.org/lodash
+167 silly registry.get cb [ 304,
+167 silly registry.get   { date: 'Thu, 09 Oct 2014 14:52:39 GMT',
+167 silly registry.get     server: 'Apache',
+167 silly registry.get     via: '1.1 varnish',
+167 silly registry.get     'last-modified': 'Thu, 09 Oct 2014 14:52:39 GMT',
+167 silly registry.get     'cache-control': 'max-age=60',
+167 silly registry.get     etag: '"EF38GX9ARU19ST2K758MOPE83"',
+167 silly registry.get     'x-served-by': 'cache-ams4135-AMS',
+167 silly registry.get     'x-cache': 'HIT',
+167 silly registry.get     'x-cache-hits': '1',
+167 silly registry.get     'x-timer': 'S1412866359.405888,VS0,VE0',
+167 silly registry.get     vary: 'Accept',
+167 silly registry.get     'content-length': '0',
+167 silly registry.get     'keep-alive': 'timeout=10, max=50',
+167 silly registry.get     connection: 'Keep-Alive' } ]
+168 verbose etag lodash from cache
+169 silly lockFile 84148ef6-graceful-fs-3-0-2 graceful-fs@^3.0.2
+170 silly lockFile 84148ef6-graceful-fs-3-0-2 graceful-fs@^3.0.2
+171 verbose about to build C:\Users\josselin\Documents\GitHub\cinematics\node_modules\lowdb
+172 info C:\Users\josselin\Documents\GitHub\cinematics\node_modules\lowdb unbuild
+173 info preuninstall lowdb@0.4.2
+174 info uninstall lowdb@0.4.2
+175 verbose true,C:\Users\josselin\Documents\GitHub\cinematics\node_modules,C:\Users\josselin\Documents\GitHub\cinematics\node_modules unbuild lowdb@0.4.2
+176 info postuninstall lowdb@0.4.2
+177 silly lockFile e7c44455-mv-2-0-3 mv@^2.0.3
+178 silly lockFile e7c44455-mv-2-0-3 mv@^2.0.3
+179 silly lockFile 48cd698b-temp-write-1-0-0 temp-write@^1.0.0
+180 silly lockFile 48cd698b-temp-write-1-0-0 temp-write@^1.0.0
+181 silly addNameRange number 2 { name: 'lodash', range: '>=2.4.1-0 <2.5.0-0', hasData: true }
+182 silly addNameRange versions [ 'lodash',
+182 silly addNameRange   [ '0.1.0',
+182 silly addNameRange     '0.2.0',
+182 silly addNameRange     '0.2.1',
+182 silly addNameRange     '0.2.2',
+182 silly addNameRange     '0.3.0',
+182 silly addNameRange     '0.3.1',
+182 silly addNameRange     '0.3.2',
+182 silly addNameRange     '0.4.0',
+182 silly addNameRange     '0.4.1',
+182 silly addNameRange     '0.4.2',
+182 silly addNameRange     '0.5.0-rc.1',
+182 silly addNameRange     '0.5.0',
+182 silly addNameRange     '0.5.1',
+182 silly addNameRange     '0.5.2',
+182 silly addNameRange     '0.6.0',
+182 silly addNameRange     '0.6.1',
+182 silly addNameRange     '0.7.0',
+182 silly addNameRange     '0.8.0',
+182 silly addNameRange     '0.8.1',
+182 silly addNameRange     '0.8.2',
+182 silly addNameRange     '0.9.0',
+182 silly addNameRange     '0.9.1',
+182 silly addNameRange     '0.9.2',
+182 silly addNameRange     '0.10.0',
+182 silly addNameRange     '1.0.0-rc.1',
+182 silly addNameRange     '1.0.0-rc.2',
+182 silly addNameRange     '1.0.0-rc.3',
+182 silly addNameRange     '1.0.0',
+182 silly addNameRange     '1.0.1',
+182 silly addNameRange     '1.1.0',
+182 silly addNameRange     '1.1.1',
+182 silly addNameRange     '1.2.0',
+182 silly addNameRange     '1.2.1',
+182 silly addNameRange     '1.3.0',
+182 silly addNameRange     '1.3.1',
+182 silly addNameRange     '2.0.0',
+182 silly addNameRange     '2.1.0',
+182 silly addNameRange     '2.2.0',
+182 silly addNameRange     '2.2.1',
+182 silly addNameRange     '2.3.0',
+182 silly addNameRange     '2.4.0',
+182 silly addNameRange     '2.4.1' ] ]
+183 verbose addNamed [ 'lodash', '2.4.1' ]
+184 verbose addNamed [ '2.4.1', '2.4.1' ]
+185 silly lockFile 8502be2a-lodash-2-4-1 lodash@2.4.1
+186 verbose lock lodash@2.4.1 C:\Users\josselin\AppData\Roaming\npm-cache\8502be2a-lodash-2-4-1.lock
+187 silly lockFile 8502be2a-lodash-2-4-1 lodash@2.4.1
+188 silly lockFile 8502be2a-lodash-2-4-1 lodash@2.4.1
+189 silly lockFile 257f9ab3-lodash-2-4-1 lodash@~2.4.1
+190 silly lockFile 257f9ab3-lodash-2-4-1 lodash@~2.4.1
+191 error Error: No compatible version found: graceful-fs@'^3.0.2'
+191 error Valid install targets:
+191 error ["1.0.0","1.0.1","1.0.2","1.1.0","1.1.1","1.1.2","1.1.3","1.1.4","1.1.5","1.1.6","1.1.7","1.1.8","1.1.9","1.1.10","1.1.11","1.1.12","1.1.13","1.1.14","1.2.0","1.2.1","1.2.2","1.2.3","2.0.0","2.0.1","2.0.2","2.0.3","3.0.0","3.0.1","3.0.2","3.0.3"]
+191 error     at installTargetsError (C:\Program Files\nodejs\node_modules\npm\lib\cache.js:719:10)
+191 error     at C:\Program Files\nodejs\node_modules\npm\lib\cache.js:638:10
+191 error     at saved (C:\Program Files\nodejs\node_modules\npm\node_modules\npm-registry-client\lib\get.js:142:7)
+191 error     at C:\Program Files\nodejs\node_modules\npm\node_modules\graceful-fs\polyfills.js:133:7
+191 error     at Object.oncomplete (fs.js:107:15)
+192 error If you need help, you may report this log at:
+192 error     <http://github.com/isaacs/npm/issues>
+192 error or email it to:
+192 error     <npm-@googlegroups.com>
+193 error System Windows_NT 6.2.9200
+194 error command "C:\\Program Files\\nodejs\\\\node.exe" "C:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npm-cli.js" "update" "--save" "lowdb"
+195 error cwd C:\Users\josselin\Documents\GitHub\cinematics
+196 error node -v v0.10.15
+197 error npm -v 1.3.5
+198 verbose exit [ 1, true ]
