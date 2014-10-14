@@ -12,5 +12,24 @@ LENP is a software architecture based on four components :
 
 # Directories
 
+* app 
+    ** routes.js : contains the routes of the application
+* config
+    ** db.json : contains data
+    ** config.js : configure lowdb instance
+* node_modules : contains node modules
+* public 
+    ** js : contains all developpement and web components
+    ** libs : contains own librairies
+    ** views : contains index.html and other views
+* servers.js : represent own server
+
+
+# Run project
+
+`node server.js`
+
+
+
 
 
